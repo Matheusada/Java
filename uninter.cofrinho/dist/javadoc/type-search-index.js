@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"empresa","l":"Cofrinho"},{"p":"empresa","l":"Dolar"},{"p":"empresa","l":"Euro"},{"p":"empresa","l":"Moeda"},{"p":"empresa","l":"Principal"},{"p":"empresa","l":"Real"}];updateSearchResults();
