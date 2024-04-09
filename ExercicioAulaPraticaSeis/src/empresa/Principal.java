@@ -12,6 +12,7 @@ public class Principal {
         c1.info();
         c2.info();
         c1.depositar(300);
+        System.out.println("--------");//contribuição
         c1.info();
         c1.sacar(800);
         c1.info();
