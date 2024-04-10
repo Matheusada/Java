@@ -10,13 +10,13 @@ public class Conta {
      this.saldo = saldo;
  }
  
- void depositar(int valor){
+ void depositar(double valor){
      if(valor<0){
          throw new RuntimeException("Valor invalido");
      }
-     saldo -=valor;
+     saldo +=valor;
  }
- void sacar(int valor) {
+ void sacar(double valor) {
      if(valor>saldo){
         throw new RuntimeException("Saldo insuficiente");
     }
@@ -25,11 +25,15 @@ public class Conta {
     }   
      saldo -= valor;
  }
- void transferir(int valor){
+ void transferir(double valor,Conta destino){
+     this.sacar(valor); 
+     destino.depositar(valor);
      if(valor<0){
          throw new RuntimeException("Valor invalido");     
      }
-     saldo -= valor;
+     if(valor > saldo){
+         throw new RuntimeException("Saldo insuficiente");
+     }
  }
  void info(){
      
