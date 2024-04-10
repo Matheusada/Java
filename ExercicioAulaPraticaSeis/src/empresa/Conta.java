@@ -16,7 +16,7 @@ public class Conta {
      }
      saldo -=valor;
  }
- void sacar(int valor) throws Exception{
+ void sacar(int valor) {
      if(valor>saldo){
         throw new RuntimeException("Saldo insuficiente");
     }
